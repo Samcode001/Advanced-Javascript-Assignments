@@ -49,6 +49,12 @@
     "LeakyBucket": "npx jest ./tests/LeakyBucket.test.js",
     "Semaphore": "npx jest ./tests/Semaphore.test.js",
     "TimeSlicedScheduler": "npx jest ./tests/TimeSlicedScheduler.test.js",
+    "RateLimiter": "npx jest ./tests/RateLimiter.test.js",
+    "checkFileExists": "npx jest ./tests/checkFileExists.test.js",
+    "measureTime": "npx jest ./tests/measureTime.test.js",
+    "sumFileSizes": "npx jest ./tests/sumFileSizes.test.js",
+    "blockEventLoop": "npx jest ./tests/blockEventLoop.test.js",
+    "chunkArray": "npx jest ./tests/chunkArray.test.js",
     "all": "npx jest ./tests/"
   },
   "keywords": [],
