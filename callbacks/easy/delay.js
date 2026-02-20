@@ -5,8 +5,13 @@
 // The function should wait for the given time and then invoke the callback
 // with `null` as the first argument and the provided value as the second argument.
 
-function delay(ms, value, callback) {
-   
+function promisify(ms) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, ms);
+  });
 }
-  
+function delay(ms, value, callback) {
+  promisify(ms).then(()=>callback(null, value));
+}
+
 module.exports = delay;
